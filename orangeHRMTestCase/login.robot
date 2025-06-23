@@ -8,7 +8,7 @@ Resource         resource.robot
 
 *** Variables ***
 ${USERNAME}    Admin
-${PASSWORD}    admin1233
+${PASSWORD}    admin123
 ${TIME}        30 seconds
 
 *** Test Cases ***
@@ -24,3 +24,5 @@ HRMWebsiteLogin
         Input Text    name:password    ${PASSWORD}
         Click Element    xpath://*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button
         Sleep    10
+        ${noOfLinks}=    get element count    xpath://a
+        log to console   ${noOfLinks}
