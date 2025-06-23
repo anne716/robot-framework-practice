@@ -1,9 +1,12 @@
 *** Settings ***
-Library    SeleniumLibrary
+Documentation    TestDemonstration
+Library          SeleniumLibrary
+Test Setup       Open the URL
+Test Teardown    Close Browser
+
+Resource         resource.robot
 
 *** Variables ***
-${BROWSER}     Chrome
-${URL}         https://opensource-demo.orangehrmlive.com/
 ${USERNAME}    Admin
 ${PASSWORD}    admin123
 ${TIME}        30 seconds
@@ -14,7 +17,6 @@ OrangeHRMWebsite
 
 *** Keywords ***
 HRMWebsiteLogin
-    Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
     Set Selenium Implicit Wait    ${TIME}
     Input Text    name:username    ${USERNAME}
