@@ -10,6 +10,10 @@ ${TIME}        30 seconds
 
 *** Test Cases ***
 OrangeHRMWebsite
+    HRMWebsiteLogin
+
+*** Keywords ***
+HRMWebsiteLogin
     Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
     Set Selenium Implicit Wait    ${TIME}
@@ -17,5 +21,3 @@ OrangeHRMWebsite
     Input Text    name:password    ${PASSWORD}
     Click Element    xpath://*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button
     Sleep    10
-
-*** Keywords ***
