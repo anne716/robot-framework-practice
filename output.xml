@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-06-23T21:02:44.949269" rpa="false" schemaversion="5">
 <suite id="s1" name="Loginnew" source="C:\Users\User\PycharmProjects\RobotFrameworkSample\orangeHRMTestCase\loginnew.robot">
 <test id="s1-t1" line="15">
@@ -6,18 +7,25 @@
 </test>
 <test id="s1-t2" name="Invalid username" line="16">
 <kw name="Open the URL" owner="resource" type="SETUP">
+=======
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-06-24T17:20:27.336168" rpa="false" schemaversion="5">
+<suite id="s1" name="ScrollingPage" source="C:\Users\User\PycharmProjects\RobotFrameworkSample\orangeHRMTestCase\ScrollingPage.robot">
+<test id="s1-t1" name="ScrollingTest" line="5">
+>>>>>>> Stashed changes
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-23T21:02:45.334729" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
+<msg time="2025-06-24T17:20:27.691342" level="INFO">Opening browser 'Chrome' to base url 'https://www.countries-ofthe-world.com/flags-of-the-world.html'.</msg>
+<arg>https://www.countries-ofthe-world.com/flags-of-the-world.html</arg>
+<arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
+<<<<<<< Updated upstream
 <status status="PASS" start="2025-06-23T21:02:45.334503" elapsed="7.963763"/>
+=======
+<status status="PASS" start="2025-06-24T17:20:27.691112" elapsed="1.823634"/>
+>>>>>>> Stashed changes
 </kw>
-<status status="PASS" start="2025-06-23T21:02:45.333945" elapsed="7.964562"/>
-</kw>
-<kw name="HRMWebsiteLogin">
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
+<<<<<<< Updated upstream
 <status status="PASS" start="2025-06-23T21:02:53.299533" elapsed="0.044576"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
@@ -44,184 +52,58 @@
 <arg>xpath://*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
 <status status="PASS" start="2025-06-23T21:02:54.181582" elapsed="1.008814"/>
+=======
+<status status="PASS" start="2025-06-24T17:20:29.515167" elapsed="0.074088"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-06-24T17:20:29.590213" level="INFO">Executing JavaScript:
+window.scrollTo(0,document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-06-24T17:20:29.589714" elapsed="0.009610"/>
+>>>>>>> Stashed changes
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-23T21:03:05.192037" level="INFO">Slept 10 seconds.</msg>
-<arg>10</arg>
+<msg time="2025-06-24T17:20:34.599991" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-23T21:02:55.191528" elapsed="10.000766"/>
+<status status="PASS" start="2025-06-24T17:20:29.599612" elapsed="5.000634"/>
 </kw>
-<kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2025-06-23T21:03:05.231124" level="INFO">${noOfLinks} = 5</msg>
-<var>${noOfLinks}</var>
-<arg>xpath://a</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2025-06-23T21:03:05.192658" elapsed="0.038591"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${noOfLinks}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-06-23T21:03:05.231543" elapsed="0.003821"/>
-</kw>
-<arg>UserAdmin</arg>
-<arg>admin123</arg>
-<status status="PASS" start="2025-06-23T21:02:53.299100" elapsed="11.936513"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-06-23T21:03:05.236173" elapsed="2.330517"/>
-</kw>
-<status status="PASS" start="2025-06-23T21:02:45.333390" elapsed="22.234032"/>
-</test>
-<test id="s1-t3" name="Invalid password" line="17">
-<kw name="Open the URL" owner="resource" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-23T21:03:07.571780" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-23T21:03:07.571336" elapsed="4.879856"/>
-</kw>
-<status status="PASS" start="2025-06-23T21:03:07.570817" elapsed="4.880532"/>
-</kw>
-<kw name="HRMWebsiteLogin">
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-06-23T21:03:12.452155" elapsed="0.059945"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
-<arg>${TIME}</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-06-23T21:03:12.512447" elapsed="0.001982"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-23T21:03:12.515048" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
-<arg>name:username</arg>
-<arg>${user}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-23T21:03:12.514692" elapsed="0.472549"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-23T21:03:12.987795" level="INFO">Typing text 'admin1234' into text field 'name:password'.</msg>
-<arg>name:password</arg>
-<arg>${pass}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-23T21:03:12.987493" elapsed="0.139377"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-06-23T21:03:13.127465" level="INFO">Clicking element 'xpath://*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
-<arg>xpath://*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-23T21:03:13.127175" elapsed="0.054764"/>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-06-24T17:20:34.601967" level="INFO">Executing JavaScript:
+window.scrollTo(0,-document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,-document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-06-24T17:20:34.601038" elapsed="0.074457"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-23T21:03:23.182857" level="INFO">Slept 10 seconds.</msg>
-<arg>10</arg>
+<msg time="2025-06-24T17:20:39.676957" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-23T21:03:13.182155" elapsed="10.000981"/>
+<status status="PASS" start="2025-06-24T17:20:34.676006" elapsed="5.001176"/>
 </kw>
-<kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2025-06-23T21:03:23.202418" level="INFO">${noOfLinks} = 5</msg>
-<var>${noOfLinks}</var>
-<arg>xpath://a</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2025-06-23T21:03:23.183505" elapsed="0.019010"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${noOfLinks}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-06-23T21:03:23.202799" elapsed="0.000643"/>
-</kw>
-<arg>Admin</arg>
-<arg>admin1234</arg>
-<status status="PASS" start="2025-06-23T21:03:12.451857" elapsed="10.751820"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-06-23T21:03:23.204499" elapsed="2.315162"/>
-</kw>
-<status status="PASS" start="2025-06-23T21:03:07.570017" elapsed="17.950182"/>
+<status status="PASS" start="2025-06-24T17:20:27.690245" elapsed="11.992554"/>
 </test>
-<test id="s1-t4" name="Invalid characters" line="18">
-<kw name="Open the URL" owner="resource" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-23T21:03:25.525790" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-23T21:03:25.525350" elapsed="4.493749"/>
-</kw>
-<status status="PASS" start="2025-06-23T21:03:25.524800" elapsed="4.494489"/>
-</kw>
-<kw name="HRMWebsiteLogin">
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-06-23T21:03:30.020167" elapsed="0.048430"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
-<arg>${TIME}</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-06-23T21:03:30.069069" elapsed="0.006931"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-23T21:03:30.076584" level="INFO">Typing text 'abc@#' into text field 'name:username'.</msg>
-<arg>name:username</arg>
-<arg>${user}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-23T21:03:30.076279" elapsed="0.486100"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-23T21:03:30.562796" level="INFO">Typing text 'admin123' into text field 'name:password'.</msg>
-<arg>name:password</arg>
-<arg>${pass}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-23T21:03:30.562563" elapsed="0.122807"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-06-23T21:03:30.685739" level="INFO">Clicking element 'xpath://*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
-<arg>xpath://*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-23T21:03:30.685547" elapsed="0.051214"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-23T21:03:40.737380" level="INFO">Slept 10 seconds.</msg>
-<arg>10</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-23T21:03:30.736915" elapsed="10.000620"/>
-</kw>
-<kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2025-06-23T21:03:40.754255" level="INFO">${noOfLinks} = 5</msg>
-<var>${noOfLinks}</var>
-<arg>xpath://a</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2025-06-23T21:03:40.737766" elapsed="0.016564"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${noOfLinks}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-06-23T21:03:40.754539" elapsed="0.000840"/>
-</kw>
-<arg>abc@#</arg>
-<arg>admin123</arg>
-<status status="PASS" start="2025-06-23T21:03:30.019858" elapsed="10.735686"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-06-23T21:03:40.755947" elapsed="2.305071"/>
-</kw>
-<status status="PASS" start="2025-06-23T21:03:25.523180" elapsed="17.538292"/>
-</test>
-<doc>TestDemonstration</doc>
-<status status="FAIL" start="2025-06-23T21:02:44.950814" elapsed="58.113133"/>
+<status status="PASS" start="2025-06-24T17:20:27.337786" elapsed="12.348590"/>
 </suite>
 <statistics>
 <total>
+<<<<<<< Updated upstream
 <stat pass="3" fail="1" skip="0">All Tests</stat>
+=======
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+>>>>>>> Stashed changes
 </total>
 <tag>
 </tag>
 <suite>
+<<<<<<< Updated upstream
 <stat name="Loginnew" id="s1" pass="3" fail="1" skip="0">Loginnew</stat>
+=======
+<stat name="ScrollingPage" id="s1" pass="1" fail="0" skip="0">ScrollingPage</stat>
+>>>>>>> Stashed changes
 </suite>
 </statistics>
 <errors>
