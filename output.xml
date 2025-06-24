@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-06-23T21:02:44.949269" rpa="false" schemaversion="5">
 <suite id="s1" name="Loginnew" source="C:\Users\User\PycharmProjects\RobotFrameworkSample\orangeHRMTestCase\loginnew.robot">
 <test id="s1-t1" line="15">
@@ -12,24 +13,48 @@
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <status status="PASS" start="2025-06-23T21:02:45.334503" elapsed="7.963763"/>
+=======
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-06-24T16:31:07.116074" rpa="false" schemaversion="5">
+<suite id="s1" name="deleteEmployee" source="C:\Users\User\PycharmProjects\RobotFrameworkSample\orangeHRMTestCase\HRMFeatureTests\employee_list\deleteEmployee.robot">
+<test id="s1-t1" name="AddEmployee" line="19">
+<kw name="Given user is logged in">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-24T16:31:07.811151" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${LoginUrl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-24T16:31:07.810903" elapsed="5.615981"/>
+>>>>>>> Stashed changes
 </kw>
 <status status="PASS" start="2025-06-23T21:02:45.333945" elapsed="7.964562"/>
 </kw>
 <kw name="HRMWebsiteLogin">
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
+<<<<<<< Updated upstream
 <status status="PASS" start="2025-06-23T21:02:53.299533" elapsed="0.044576"/>
+=======
+<status status="PASS" start="2025-06-24T16:31:13.427244" elapsed="0.040894"/>
+>>>>>>> Stashed changes
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>${TIME}</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
+<<<<<<< Updated upstream
 <status status="PASS" start="2025-06-23T21:02:53.344345" elapsed="0.002815"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <msg time="2025-06-23T21:02:53.347854" level="INFO">Typing text 'UserAdmin' into text field 'name:username'.</msg>
+=======
+<status status="PASS" start="2025-06-24T16:31:13.468795" elapsed="0.006922"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T16:31:13.477277" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
+>>>>>>> Stashed changes
 <arg>name:username</arg>
 <arg>${user}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<<<<<<< Updated upstream
 <status status="PASS" start="2025-06-23T21:02:53.347371" elapsed="0.725596"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
@@ -217,11 +242,121 @@
 <statistics>
 <total>
 <stat pass="3" fail="1" skip="0">All Tests</stat>
+=======
+<status status="PASS" start="2025-06-24T16:31:13.476253" elapsed="0.547298"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T16:31:14.524686" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${InputTimer}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T16:31:14.023840" elapsed="0.501100"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T16:31:14.525854" level="INFO">Typing text 'admin123' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T16:31:14.525311" elapsed="0.161146"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T16:31:14.687215" level="INFO">Clicking element 'xpath://*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<arg>xpath://*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T16:31:14.686850" elapsed="0.079040"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-06-24T16:31:14.776219" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-06-24T16:31:14.766030" elapsed="0.010278"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-06-24T16:31:14.776619" level="INFO">Verifying element '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[1]/span/h6' contains exact text 'Dashboard'.</msg>
+<arg>//*[@id="app"]/div[1]/div[1]/header/div[1]/div[1]/span/h6</arg>
+<arg>Dashboard</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-06-24T16:31:14.776445" elapsed="1.813698"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T16:31:21.591257" level="INFO">Slept 5 seconds.</msg>
+<arg>${DisplayTimer}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T16:31:16.590331" elapsed="5.001212"/>
+</kw>
+<status status="PASS" start="2025-06-24T16:31:07.809894" elapsed="13.781924"/>
+</kw>
+<kw name="When user navigates to employee list">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-06-24T16:31:21.593930" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList'</msg>
+<arg>${EmployeeListUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-06-24T16:31:21.593535" elapsed="0.472100"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-06-24T16:31:22.066256" level="INFO">Verifying element '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[1]/span/h6' contains exact text 'PIM'.</msg>
+<arg>//*[@id="app"]/div[1]/div[1]/header/div[1]/div[1]/span/h6</arg>
+<arg>PIM</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-06-24T16:31:22.065918" elapsed="0.393574"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T16:31:27.461261" level="INFO">Slept 5 seconds.</msg>
+<arg>${DisplayTimer}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T16:31:22.459915" elapsed="5.001604"/>
+</kw>
+<status status="PASS" start="2025-06-24T16:31:21.592651" elapsed="5.869153"/>
+</kw>
+<kw name="And clicks the delete icon">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T16:31:27.464263" level="INFO">Clicking element 'xpath://*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[1]/div/div[9]/div/button[2]'.</msg>
+<arg>xpath://*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[1]/div/div[9]/div/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T16:31:27.463878" elapsed="0.153798"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T16:31:30.618978" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T16:31:27.618467" elapsed="3.000720"/>
+</kw>
+<status status="PASS" start="2025-06-24T16:31:27.463320" elapsed="3.156058"/>
+</kw>
+<kw name="And confirms deletion">
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-06-24T16:31:30.620720" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2025-06-24T16:31:35.806021" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-24T16:31:35.806399" level="FAIL">Alert not found in 5 seconds.</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="FAIL" start="2025-06-24T16:31:30.620455" elapsed="5.244118">Alert not found in 5 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-06-24T16:31:30.619959" elapsed="5.244983">Alert not found in 5 seconds.</status>
+</kw>
+<kw name="Then employee information is deleted">
+<status status="NOT RUN" start="2025-06-24T16:31:35.865585" elapsed="0.000081"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-24T16:31:35.866303" elapsed="2.345022"/>
+</kw>
+<status status="FAIL" start="2025-06-24T16:31:07.808985" elapsed="30.404856">Alert not found in 5 seconds.</status>
+</test>
+<status status="FAIL" start="2025-06-24T16:31:07.117637" elapsed="31.104931"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+>>>>>>> Stashed changes
 </total>
 <tag>
 </tag>
 <suite>
+<<<<<<< Updated upstream
 <stat name="Loginnew" id="s1" pass="3" fail="1" skip="0">Loginnew</stat>
+=======
+<stat name="deleteEmployee" id="s1" pass="0" fail="1" skip="0">deleteEmployee</stat>
+>>>>>>> Stashed changes
 </suite>
 </statistics>
 <errors>
